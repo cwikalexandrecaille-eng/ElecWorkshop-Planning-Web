@@ -1,2 +1,5 @@
-# ElecWorkshop-Planning-Web
-Interface web publique de ElecWorkshop Planning. Connexion requise pour accéder aux données.
+# ElecWorkshop Planning
+
+Interface web de gestion du planning des armoires électriques.
+
+Les données sont accessibles après authentification et autorisation par le service de données de Planning.
