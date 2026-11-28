@@ -1,6 +1,6 @@
 
-const CACHE="ew-planning-de6c0c8d456e";
-const FILES=["./icon-180-v2.png","./icon-180.png","./icon-192-v2.png","./icon-192.png","./icon-512-v2.png","./icon-512.png","./icon.svg","./index.html","./manifest.webmanifest","./assets/exceljs.min-DEowLOGY.js","./assets/index-Biu4qmCd.css","./assets/index-xnJQnX7k.js"];
+const CACHE="ew-planning-0e34aa1a6ce2";
+const FILES=["./icon-180-v2.png","./icon-180.png","./icon-192-v2.png","./icon-192.png","./icon-512-v2.png","./icon-512.png","./icon.svg","./index.html","./manifest.webmanifest","./assets/exceljs.min-DEowLOGY.js","./assets/index-B6R8qD6V.js","./assets/index-CD1Isjd7.css"];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES))));
 self.addEventListener('message',e=>{if(e.data==='ACTIVATE')self.skipWaiting()});
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('ew-planning-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
